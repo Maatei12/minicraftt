@@ -1,0 +1,320 @@
+# ╔══════════════════════════════════════════╗
+# ║        Miere Plugin - Config          ║
+# ╚══════════════════════════════════════════╝
+
+# Simbolul monedei afisat in mesaje
+coin-symbol: "🍯"
+coin-name: "Miere"
+
+# ── Shop Fly (timp de zbor cumparat cu Miere) ────────────────────────────────
+# Comanda executata: /fly add <jucator> <secunde>
+fly-shop:
+  - duration: 300      # 5 minute
+    price: 200
+    name: "&b✈ Fly &75 Minute"
+    lore:
+      - "&75 minute de zbor"
+      - "&ePret: &6200 Miere"
+
+  - duration: 900      # 15 minute
+    price: 500
+    name: "&b✈ Fly &715 Minute"
+    lore:
+      - "&715 minute de zbor"
+      - "&ePret: &6500 Miere"
+
+  - duration: 1800     # 30 minute
+    price: 900
+    name: "&b✈ Fly &730 Minute"
+    lore:
+      - "&730 minute de zbor"
+      - "&ePret: &6900 Miere"
+
+  - duration: 3600     # 1 ora
+    price: 1500
+    name: "&b✈ Fly &71 Ora"
+    lore:
+      - "&71 ora de zbor"
+      - "&ePret: &61,500 Miere"
+
+  - duration: 10800    # 3 ore
+    price: 3500
+    name: "&b✈ Fly &73 Ore"
+    lore:
+      - "&73 ore de zbor"
+      - "&ePret: &63,500 Miere"
+
+  - duration: 86400    # 1 zi
+    price: 20000
+    name: "&6✈ Fly &71 Zi"
+    lore:
+      - "&71 zi intreaga de zbor"
+      - "&ePret: &620,000 Miere"
+
+# ── Recompense per mob (in Miere) ────────────────────────────────────────
+# Mobs comune = putine coins
+# Mobs rare/puternice = mai multe coins
+# Sansa de drop (0.0 - 1.0): 1.0 = mereu, 0.5 = 50% sansa
+mob-rewards:
+  # ── Mobs comune ──
+  ZOMBIE:
+    min: 1
+    max: 3
+    chance: 1.0
+  SKELETON:
+    min: 1
+    max: 3
+    chance: 1.0
+  SPIDER:
+    min: 1
+    max: 2
+    chance: 1.0
+  CAVE_SPIDER:
+    min: 2
+    max: 4
+    chance: 1.0
+  CREEPER:
+    min: 2
+    max: 5
+    chance: 1.0
+  DROWNED:
+    min: 1
+    max: 3
+    chance: 0.9
+  HUSK:
+    min: 1
+    max: 3
+    chance: 1.0
+  STRAY:
+    min: 2
+    max: 4
+    chance: 1.0
+  PHANTOM:
+    min: 3
+    max: 6
+    chance: 0.9
+
+  # ── Mobs medii ──
+  WITCH:
+    min: 8
+    max: 15
+    chance: 0.8
+  PILLAGER:
+    min: 5
+    max: 10
+    chance: 0.9
+  VINDICATOR:
+    min: 6
+    max: 12
+    chance: 0.9
+  RAVAGER:
+    min: 20
+    max: 35
+    chance: 1.0
+  ENDERMAN:
+    min: 5
+    max: 10
+    chance: 0.9
+  BLAZE:
+    min: 8
+    max: 14
+    chance: 0.9
+  GHAST:
+    min: 10
+    max: 18
+    chance: 0.8
+  MAGMA_CUBE:
+    min: 3
+    max: 7
+    chance: 0.9
+  SLIME:
+    min: 2
+    max: 5
+    chance: 0.9
+  PIGLIN_BRUTE:
+    min: 10
+    max: 18
+    chance: 0.9
+  ZOMBIFIED_PIGLIN:
+    min: 4
+    max: 8
+    chance: 0.8
+
+  # ── Mobs rare/puternice ──
+  ELDER_GUARDIAN:
+    min: 30
+    max: 50
+    chance: 1.0
+  GUARDIAN:
+    min: 8
+    max: 15
+    chance: 0.9
+  WARDEN:
+    min: 80
+    max: 120
+    chance: 1.0
+  IRON_GOLEM:
+    min: 15
+    max: 25
+    chance: 0.7
+  SHULKER:
+    min: 12
+    max: 20
+    chance: 0.9
+
+  # ── Bossuri ──
+  ENDER_DRAGON:
+    min: 500
+    max: 1000
+    chance: 1.0
+  WITHER:
+    min: 300
+    max: 600
+    chance: 1.0
+
+# ── Shop Spawnere ────────────────────────────────────────────────────────────
+# Spawnere cu mobs comune = ieftine
+# Spawnere cu mobs rare/profitabile = scumpe
+spawner-shop:
+
+  # ── Categoria: Comune (ieftine) ──
+  - id: zombie_spawner
+    material: SPAWNER
+    name: "&aSpawner Zombie"
+    spawner-type: ZOMBIE
+    price: 500
+    lore:
+      - "&7Spawneaza Zombie"
+      - "&7Drop: &e1-3 coins &7per kill"
+      - ""
+      - "&ePret: &6500 Miere"
+
+  - id: skeleton_spawner
+    material: SPAWNER
+    name: "&aSpawner Skeleton"
+    spawner-type: SKELETON
+    price: 500
+    lore:
+      - "&7Spawneaza Skeleton"
+      - "&7Drop: &e1-3 coins &7per kill"
+      - ""
+      - "&ePret: &6500 Miere"
+
+  - id: spider_spawner
+    material: SPAWNER
+    name: "&aSpawner Spider"
+    spawner-type: SPIDER
+    price: 400
+    lore:
+      - "&7Spawneaza Spider"
+      - "&7Drop: &e1-2 coins &7per kill"
+      - ""
+      - "&ePret: &6400 Miere"
+
+  - id: creeper_spawner
+    material: SPAWNER
+    name: "&aSpawner Creeper"
+    spawner-type: CREEPER
+    price: 600
+    lore:
+      - "&7Spawneaza Creeper"
+      - "&7Drop: &e2-5 coins &7per kill"
+      - ""
+      - "&ePret: &6600 Miere"
+
+  # ── Categoria: Medii ──
+  - id: witch_spawner
+    material: SPAWNER
+    name: "&eSpawner Vrajitoare"
+    spawner-type: WITCH
+    price: 2500
+    lore:
+      - "&7Spawneaza Vrajitoare"
+      - "&7Drop: &e8-15 coins &7per kill"
+      - "&c⚠ Mai greu de omorat!"
+      - ""
+      - "&ePret: &62,500 Miere"
+
+  - id: enderman_spawner
+    material: SPAWNER
+    name: "&eSpawner Enderman"
+    spawner-type: ENDERMAN
+    price: 3000
+    lore:
+      - "&7Spawneaza Enderman"
+      - "&7Drop: &e5-10 coins &7per kill"
+      - "&c⚠ Atentie la privit!"
+      - ""
+      - "&ePret: &63,000 Miere"
+
+  - id: blaze_spawner
+    material: SPAWNER
+    name: "&eSpawner Blaze"
+    spawner-type: BLAZE
+    price: 3500
+    lore:
+      - "&7Spawneaza Blaze"
+      - "&7Drop: &e8-14 coins &7per kill"
+      - "&c⚠ Necesita rezistenta la foc!"
+      - ""
+      - "&ePret: &63,500 Miere"
+
+  - id: pillager_spawner
+    material: SPAWNER
+    name: "&eSpawner Pillager"
+    spawner-type: PILLAGER
+    price: 2000
+    lore:
+      - "&7Spawneaza Pillager"
+      - "&7Drop: &e5-10 coins &7per kill"
+      - ""
+      - "&ePret: &62,000 Miere"
+
+  # ── Categoria: Rare (scumpe) ──
+  - id: guardian_spawner
+    material: SPAWNER
+    name: "&6Spawner Guardian"
+    spawner-type: GUARDIAN
+    price: 8000
+    lore:
+      - "&7Spawneaza Guardian"
+      - "&7Drop: &e8-15 coins &7per kill"
+      - "&c⚠ Necesita apa!"
+      - ""
+      - "&ePret: &68,000 Miere"
+
+  - id: piglin_brute_spawner
+    material: SPAWNER
+    name: "&6Spawner Piglin Brute"
+    spawner-type: PIGLIN_BRUTE
+    price: 6000
+    lore:
+      - "&7Spawneaza Piglin Brute"
+      - "&7Drop: &e10-18 coins &7per kill"
+      - "&c⚠ Foarte periculos!"
+      - ""
+      - "&ePret: &66,000 Miere"
+
+  - id: ravager_spawner
+    material: SPAWNER
+    name: "&cSpawner Ravager"
+    spawner-type: RAVAGER
+    price: 15000
+    lore:
+      - "&7Spawneaza Ravager"
+      - "&7Drop: &e20-35 coins &7per kill"
+      - "&c⚠ Extrem de periculos!"
+      - ""
+      - "&ePret: &615,000 Miere"
+
+  - id: elder_guardian_spawner
+    material: SPAWNER
+    name: "&cSpawner Elder Guardian"
+    spawner-type: ELDER_GUARDIAN
+    price: 20000
+    lore:
+      - "&7Spawneaza Elder Guardian"
+      - "&7Drop: &e30-50 coins &7per kill"
+      - "&c⚠ Boss de apa!"
+      - ""
+      - "&ePret: &620,000 Miere"

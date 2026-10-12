@@ -1,0 +1,14 @@
+name: WorldLockPlugin
+version: 1.0.0
+main: dev.worldlock.plugin.WorldLockPlugin
+api-version: 1.20
+author: WorldLockPlugin
+description: Blocheaza accesul in Nether si End
+
+permissions:
+  worldlock.end:
+    description: Permite intrarea in End
+    default: op
+  worldlock.bypass:
+    description: Bypass complet pentru toate lumile blocate
+    default: op

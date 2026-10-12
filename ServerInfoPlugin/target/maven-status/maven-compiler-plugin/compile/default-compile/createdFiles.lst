@@ -1,0 +1,3 @@
+dev\serverinfo\plugin\commands\ServerInfoCommand.class
+dev\serverinfo\plugin\gui\ServerInfoGUI.class
+dev\serverinfo\plugin\ServerInfoPlugin.class

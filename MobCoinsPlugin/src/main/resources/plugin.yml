@@ -1,0 +1,37 @@
+name: MobCoinsPlugin
+version: 1.0.0
+main: dev.mobcoins.plugin.MobCoinsPlugin
+api-version: 1.20
+author: MobCoinsPlugin
+description: Sistem de MobCoins - castiga monede din kill-uri si cumpara spawnere
+
+commands:
+  mobcoins:
+    description: Comenzi MobCoins
+    usage: /mobcoins [balance|pay|top|give|set]
+    aliases: [mc, coins]
+  spawnershop:
+    description: Deschide shop-ul de spawnere
+    usage: /spawnershop
+    aliases: [sspawn]
+  flyshop:
+    description: Cumpara timp de fly cu Miere
+    usage: /flyshop
+    aliases: [flystore, buyfly]
+
+permissions:
+  mobcoins.use:
+    description: Acces de baza la MobCoins
+    default: true
+  mobcoins.shop:
+    description: Acces la shop-ul de spawnere
+    default: true
+  mobcoins.pay:
+    description: Poate trimite coins altor jucatori
+    default: true
+  mobcoins.top:
+    description: Poate vedea topul de coins
+    default: true
+  mobcoins.admin:
+    description: Acces admin (give, set, reset)
+    default: op

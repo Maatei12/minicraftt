@@ -1,0 +1,60 @@
+# ╔══════════════════════════════════════╗
+# ║        KitsPlugin Configuration      ║
+# ╚══════════════════════════════════════╝
+
+# Titlul meniului principal
+menu-title: "&8[ &6⚔ &eKITURI &6⚔ &8]"
+
+kits:
+
+  # ── Kit Starter ──────────────────────────────
+  starter:
+    display-name: "&a&lKit Starter"
+    permission: "kits.starter"
+    # Cooldown in secunde (3600 = 1 ora)
+    cooldown: 3600
+    # Icon afisat in meniu
+    icon: IRON_SWORD
+    description:
+      - "&7Kit de baza pentru toti jucatorii."
+      - "&7Disponibil o data la &e1 ora&7."
+    # Itemele din kit - le poti edita direct aici
+    # Format: MATERIAL:cantitate sau MATERIAL pentru 1 bucata
+    items:
+      - IRON_SWORD:1
+      - IRON_PICKAXE:1
+      - IRON_AXE:1
+      - IRON_SHOVEL:1
+      - IRON_HELMET:1
+      - IRON_CHESTPLATE:1
+      - IRON_LEGGINGS:1
+      - IRON_BOOTS:1
+      - BREAD:16
+      - TORCH:32
+
+  # ── Kit Donator ───────────────────────────────
+  donator:
+    display-name: "&6&lKit Donator"
+    permission: "kits.donator"
+    # Cooldown in secunde (86400 = 1 zi)
+    cooldown: 86400
+    icon: DIAMOND_SWORD
+    description:
+      - "&7Kit exclusiv pentru &6Donatori&7."
+      - "&7Disponibil o data la &e1 zi&7."
+      - ""
+      - "&7Donezi &a5 euro &7si primesti"
+      - "&7rankul &6Donator &7cu acces la acest kit!"
+    items:
+      - DIAMOND_SWORD:1
+      - DIAMOND_PICKAXE:1
+      - DIAMOND_AXE:1
+      - DIAMOND_SHOVEL:1
+      - DIAMOND_HELMET:1
+      - DIAMOND_CHESTPLATE:1
+      - DIAMOND_LEGGINGS:1
+      - DIAMOND_BOOTS:1
+      - GOLDEN_APPLE:8
+      - COOKED_BEEF:32
+      - TORCH:64
+      - EXPERIENCE_BOTTLE:16

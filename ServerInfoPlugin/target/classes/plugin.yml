@@ -1,0 +1,24 @@
+name: ServerInfoPlugin
+version: 1.0.0
+main: dev.serverinfo.plugin.ServerInfoPlugin
+api-version: 1.20
+author: ServerInfoPlugin
+description: Meniu informativ despre server
+
+commands:
+  meniu:
+    description: Deschide meniul principal al serverului
+    usage: /meniu
+    aliases: [menu, serverinfo, info, si, m]
+  reload-serverinfo:
+    description: Reincarca config-ul ServerInfo
+    usage: /reload-serverinfo
+    permission: serverinfo.reload
+
+permissions:
+  serverinfo.use:
+    description: Acces la /menu
+    default: true
+  serverinfo.reload:
+    description: Reload config
+    default: op

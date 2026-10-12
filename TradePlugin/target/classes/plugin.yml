@@ -1,0 +1,17 @@
+name: TradePlugin
+version: 1.0.0
+main: dev.trade.tradeplugin.TradePlugin
+api-version: 1.20
+author: TradePlugin
+description: Plugin custom de trade intre jucatori
+
+commands:
+  trade:
+    description: Trimite sau accepta/refuza un trade
+    usage: /trade <jucator> | /trade accept | /trade deny
+    aliases: [tr]
+
+permissions:
+  tradeplugin.trade:
+    description: Permite folosirea comenzii /trade
+    default: true

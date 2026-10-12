@@ -1,0 +1,5 @@
+dev\mobcoins\plugin\listeners\MobKillListener.class
+dev\mobcoins\plugin\MobCoinsPlugin.class
+dev\mobcoins\plugin\commands\MobCoinsCommand.class
+dev\mobcoins\plugin\managers\CoinManager.class
+dev\mobcoins\plugin\gui\ShopGUI.class

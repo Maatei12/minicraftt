@@ -1,0 +1,5 @@
+dev\kits\plugin\managers\KitManager.class
+dev\kits\plugin\commands\KitsCommand.class
+dev\kits\plugin\gui\KitsGUI.class
+dev\kits\plugin\models\Kit.class
+dev\kits\plugin\KitsPlugin.class

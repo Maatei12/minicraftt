@@ -1,0 +1,29 @@
+name: KitsPlugin
+version: 1.0.0
+main: dev.kits.plugin.KitsPlugin
+api-version: 1.20
+author: KitsPlugin
+description: Plugin de kits custom cu GUI
+
+commands:
+  kit:
+    description: Deschide meniul de kits sau ia un kit
+    usage: /kit [nume]
+    aliases: [kits]
+
+permissions:
+  kits.use:
+    description: Acces la /kit
+    default: true
+  kits.starter:
+    description: Acces la kit starter
+    default: true
+  kits.donator:
+    description: Acces la kit donator
+    default: false
+  kits.admin:
+    description: Acces admin (reset cooldown etc)
+    default: op
+  kits.cooldown.bypass:
+    description: Bypass cooldown
+    default: op

@@ -1,0 +1,54 @@
+# ╔══════════════════════════════════════╗
+# ║       ServerInfo Plugin Config       ║
+# ╚══════════════════════════════════════╝
+
+# Titlul meniului principal
+menu-title: "&8[ &6✦ &eINFO SERVER &6✦ &8]"
+
+# Informatii despre server
+server:
+  name: "&6&lNume Server"
+  ip: "&fplay.serverul-tau.ro"
+  version: "&f1.20.1"
+  description:
+    - "&7Bine ai venit pe serverul nostru!"
+    - "&7Suntem un server survival cu multe"
+    - "&7feature-uri custom si o comunitate"
+    - "&7activa de jucatori."
+
+# Discord
+discord:
+  invite: "discord.gg/serverul-tau"
+  description:
+    - "&7Alatura-te comunitatii noastre"
+    - "&7pe Discord pentru:"
+    - "&a✔ &7Anunturi"
+    - "&a✔ &7Support"
+    - "&a✔ &7Giveaway-uri"
+
+# Donatie
+donation:
+  price: "&a5 Euro"
+  rank-name: "&6Donator"
+  benefits:
+    - "&6✦ &7Rank &6Donator &7in joc si pe Discord"
+    - "&a✔ &7Acces la &e/kit donator"
+    - "&a✔ &7&e5,000$ &7bani in joc"
+    - "&a✔ &7Prefix colorat in chat"
+    - "&a✔ &7Acces la comenzi exclusive"
+    - "&a✔ &7Tag special pe Discord"
+  site: "https://site-ul-tau.tebex.io"
+
+# Reguli (optional, apar in meniu)
+rules:
+  - "&c1. &7Nu hack/cheat"
+  - "&c2. &7Respecta toti jucatorii"
+  - "&c3. &7Nu spam in chat"
+  - "&c4. &7Nu grief pe terenuri"
+  - "&c5. &7Asculta de staff"
+
+# Social media
+socials:
+  tiktok: "@serverul-tau"
+  youtube: "Serverul Tau YT"
+  instagram: "@serverul.tau"

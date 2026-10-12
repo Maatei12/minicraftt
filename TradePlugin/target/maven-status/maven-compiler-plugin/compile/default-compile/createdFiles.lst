@@ -1,0 +1,6 @@
+dev\trade\tradeplugin\TradePlugin.class
+dev\trade\tradeplugin\gui\TradeGUI.class
+dev\trade\tradeplugin\models\TradeSession$State.class
+dev\trade\tradeplugin\managers\TradeManager.class
+dev\trade\tradeplugin\models\TradeSession.class
+dev\trade\tradeplugin\commands\TradeCommand.class
