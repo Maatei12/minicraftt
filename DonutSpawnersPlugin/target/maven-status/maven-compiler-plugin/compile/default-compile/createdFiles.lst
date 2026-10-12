@@ -1,0 +1,5 @@
+dev\donutspawners\plugin\gui\SpawnerGUI.class
+dev\donutspawners\plugin\listeners\SpawnerListener.class
+dev\donutspawners\plugin\data\SpawnerData.class
+dev\donutspawners\plugin\managers\SpawnerManager.class
+dev\donutspawners\plugin\DonutSpawnersPlugin.class

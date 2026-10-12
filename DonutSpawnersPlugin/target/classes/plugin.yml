@@ -1,0 +1,24 @@
+name: DonutSpawnersPlugin
+version: 1.0.0
+main: dev.donutspawners.plugin.DonutSpawnersPlugin
+api-version: 1.20
+author: DonutSpawnersPlugin
+description: Spawnere fara entitati - acumuleaza drops pasiv ca pe Donut SMP
+
+commands:
+  spawnerinfo:
+    description: Info despre spawnerul la care te uiti
+    usage: /spawnerinfo
+    aliases: [sinfo]
+  givespawner:
+    description: Da un spawner unui jucator (admin)
+    usage: /givespawner <tip> [cantitate]
+    permission: donutspawners.admin
+
+permissions:
+  donutspawners.use:
+    description: Poate plasa si folosi spawnere
+    default: true
+  donutspawners.admin:
+    description: Admin - poate da spawnere si reseta stoc
+    default: op
